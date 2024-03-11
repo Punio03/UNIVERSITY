@@ -1,0 +1,26 @@
+Zadanie 1 (1 pkt).
+Zdefiniuj własny rozkład prawdopodobieństwa, który będzie losował liczby z zadanego przedziału: liczby całkowite ze zbioru {a, ..., b-1} albo liczby rzeczywiste z przedziału [a, b). Liczby ze środka przedziału powinny się pojawiać rzadko a liczby zbliżone do brzegów zadanego przedziału często.
+Uwaga: można wykorzystać rozkład uniform_int_distribution<> oraz uniform_real_distribution<> ale należy samodzielnie przekształcić otrzymane wartości tak, aby spełniały warunki zadania.
+Zadanie 2 (2 pkt).
+Napisz program, który wygeneruje 1000 losowych liczb z rozkładem:
+jednostajnym, używając uniform_real_distribution;
+dwumianowym, używając binomial_distribution;
+normalnym, używając normal_distribution.
+Wygenerowane liczby zapisz w pliku .csv (dla każdego rozkładu w osobnym pliku). Zrób w arkuszu kalkulacyjnym wykresy dla danych wygenerowanych w taki sposób, aby sprawdzić poprawność zastosowanego rozkładu prawdopodobieństwa.
+Z formatem pliku CSV można się zapoznać na przykład na Wikipedii:
+      https://pl.wikipedia.org/wiki/CSV_(format_pliku)
+      https://en.wikipedia.org/wiki/Comma-separated_values
+Zadanie 3 (2 pkt).
+Napisz program, który wygeneruje losowy tekst złożony tylko z małych liter alfabetu angielskiego i spacji (bez znaków interpunkcyjnych). Długość tekstu oraz nazwę pliku .txt do zapisania tekstu przekaż poprzez argumenty wywołania progamu. Litery w tym tekście mają się pojawiać z częstotliwością zgodną ze statystyką podaną w tabelce (rozkład taki musisz więc samodzielnie zaprogramować). Kolejne słowa w tekście mają być oddzielone pojedynczymi spacjami. Każde słowo ma mieć losową długość z zakresu od 1 do 12 liter a długości te mają być wybierane zgodnie z rozkładem dwumianowym.
+Zadanie 4 (2 pkt).
+Zdefiniuj funkcje pracujące na liczbach zespolonych, które będą wyliczać wartość:
+funkcji gamma Eulera Γ(z)=1z∏∞n=1(1+1n)z1+zn
+i odwrotności tej funkcji 1Γ(z)=zeγz∏∞n=1((1+zn)e−zn).
+Symbol γ reprezentuje stałą Eulera-Mascheroniego wynoszącą około 0.5772156649. Funkcje te mają liczyć wartość funkcji w zadanym punkcie zespolonym z określoną dokładnością (liczba iteracji).
+Zadanie 5 (3 pkt).
+Zdefiniuj funkcję pracującą na liczbach zespolonych, która będzie wyliczać wartość funkcji dzeta Riemanna ζ(z)=∑∞n=1(1n)z. Szereg ten jest zbieżny dla takich z, których część rzeczywista jest Re(z)>1. Funkcja ta ma liczyć wartość funkcji w zadanym punkcie zespolonym z określoną dokładnością (liczba iteracji).
+Policz i stablicuj wartości tej funkcji na prostej krytycznej z hipotezy Riemanna, gdzie część rzeczywista jest Re(z)=0.5. Stablicuj dane z przedziału od -30 do 30 ze skokiem co najmniej 0.1. Musisz użyć wzoru zbieżnego dla liczb zespolonych, w których część rzeczywista jest z zakresu 0<Re(z)<1, czyli: ζ(z)=11−21−z∑∞i=1(−1)n+1nz
+Wygenerowane liczby zapisz w pliku .csv (w osobnych kolumnach części rzeczywiste i urojone). Następnie zrób w arkuszu kalkulacyjnym podwójny wykres dla danych wygenerowanych w taki sposób (nałożone na siebie wykresy dla części rzeczywistych i urojonych).
+Z formatem pliku CSV można się zapoznać na przykład na Wikipedii:
+    https://pl.wikipedia.org/wiki/CSV_(format_pliku)
+    https://en.wikipedia.org/wiki/Comma-separated_values
