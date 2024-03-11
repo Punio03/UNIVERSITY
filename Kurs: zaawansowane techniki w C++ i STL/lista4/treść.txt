@@ -1,0 +1,14 @@
+Zadanie 1 (2 pkt).
+Zaimplementuj funktor compose_f_gx_hx realizujący złożenie dwuargumentowe f(g(x), h(x)). Podaj przykład jego użycia.
+Zadanie 2 (2 pkt).
+Zaimplementuj funktor do składania funkcji poprzez wykonywanie ich po kolei. Funkcja po_kolei(f1, f2)(x) powinna wykonać najpierw f1(x) a potem f2(x). Wartości zwracane przez te funkcje mają być ignorowane. Funkcja po_kolei() powinna zwracać taki funktor, aby możliwe było dalsze składanie, na przykład po_kolei(po_kolei(f1, f2), f3)(x). Podaj przykład jego użycia.
+Zadanie 3 (5 pkt).
+Stwórz w swoim programie trzy zbiory danych różnego typu vector<double>, list<string> i set<int>. Wypełnij te kontenery przypadkowymi wartościami (możesz losować albo arbitralnie coś wpisać). Następnie na zbiorach tych wykonaj pewne obliczenia z użyciem zdefiniowanych przez ciebie funktorów:
+Wypisz wszystkie wartości z zadanego zakresu (większe od a i mniejsze od b).
+Wypisz co k-tą wartość zaczynając od pozycji p-tej.
+Wyznacz średnią arytmetyczną (dotyczy kolekcji z liczbami).
+Wyznacz element minimalny i maksymalny (zwróć parę wartości).
+Wyznacz sumę (albo konkatenację dla łańcuchów znakowych) wszystkich elementów.
+Do każdego zadania zdefiniuj obiekt funkcyjny (ze stanem wewnętrznym) i użyj go w pętli for-each. Programując to zadanie nie wolno korzystać z funkcji accumulate() ani innych podobnych.
+Zadanie 4 (1 pkt).
+Zdefiniuj rekurencyjną lambdę do wyliczenia współczynnika dwumianowego (n po k) tylko dla naturalnych wartości n i k. Następnie przetestuj tą lambdę na kilku niedużych wartościach umieszczonych w kolekcji par vector<pair<int,int>> (umieść tam na ostatniej pozycji parę z jakąś liczbą ujemną).
