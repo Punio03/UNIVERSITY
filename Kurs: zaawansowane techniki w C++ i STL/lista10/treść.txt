@@ -1,0 +1,13 @@
+Zadanie 1 (1 pkt).
+Zdefiniuj napis typu wstring zawierający wszystkie polskie znaki diakrytyczne i wypisz go na standardowym wyjściu wcout. Napis powinien być sensownym zdaniem w języku polskim!
+Zadanie 2 (3 pkt).
+Wypisz w trzech różnych lokalizacjach następujące dane (kilka oznacza >2):
+kilka liczb całkowitych i zmiennopozycyjnych;
+kilka wartości pieniężnych;
+bieżącą datę i godzinę.
+Zadanie 3 (3 pkt).
+Przekonwertuj plik tekstowy używający kodowania UTF-8 na dwa inne pliki z kodowaniem:
+UTF-32,
+ISO-8859-2.
+Zadanie 4 (3 pkt).
+W wektorze vector<wstring> znajdują się nazwy różnych zwierząt i roślin (wstaw do kontenera kilkanaście różnych nazw). Posortuj je używając kolatora dla polskiej lokalizacji a potem wypisz na standardowe wyjście. Dobierz nazwy zwierząt i roślin oraz kolejność tak, aby uzasadnić prawidłowe działanie kolatora.
