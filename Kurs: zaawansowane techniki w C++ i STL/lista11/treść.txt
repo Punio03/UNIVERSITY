@@ -1,0 +1,16 @@
+Zadanie 1 (1 pkt).
+Wykorzystując metaprogramowanie zdefiniuj szablon obiektu funkcyjnego, pozwalającego obliczyć na poziomie kompilacji n-tą liczbę Lucasa dla liczby naturalnej n ≥ 0. Funkcja powinna działać (w trakcie kompilacji) w liniowym czasie O(n).
+Zadanie 2 (2 pkt).
+Wykorzystując metaprogramowanie zdefiniuj szablon obiektu funkcyjnego, pozwalającego obliczyć na poziomie kompilacji współczynnik dwumianowy (nk) dla liczb naturalnych 0 ≤ k ≤ n. Funkcja powinna działać (w trakcie kompilacji) w liniowym czasie O(n).
+Zadanie 3 (1 pkt).
+Wykorzystując metaprogramowanie zdefiniuj szablon obiektu funkcyjnego, pozwalającego obliczyć na poziomie kompilacji największy wspólny dzielnik NWD(a, b) dla liczb naturalnych a, b ≥ 1 dla naturalnych liczb 0 ≤ k ≤ n. Funkcja powinna działać (w trakcie kompilacji) w logarytmicznym czasie O(log a + log b).
+Zadanie 4 (2 pkt).
+Wykorzystując metaprogramowanie zdefiniuj szablon funkcji liczącej iloczyn skalarny dwóch wektorów:
+template<size_t N> double inner(double *x, double *y);
+Parametrem szablonu ma być dlugość mnożonych wektorów.
+Zmodyfikuj poprzedni szablon funkcji liczącej iloczyn skalarny w taki sposób, aby drugim parametrem był typ danych:
+template<size_t N, typename T = double> T inner(T *x, T *y);
+Zadanie 5 (4 pkt).
+Wykorzystując metaprogramowanie zdefiniuj szablon klasy będącej opakowaniem dla obiektu określonego w parametrze typu template<typename T> struct obj_holder. Opakowanie to ma konieczne zaalokować pamięć dla obiektu na stosie, jeśli jest on mały (jego rozmiar jest nie więszy niż sizeof(string)) i nie jest tablicą albo na stercie w przeciwnym przypadku.
+W strukturze obj_holder zdefiniuj alias type dla docelowego typu ustalony w oparciu o selektor std::conditional<> - będzie to albo struktura on_stack (dla małych obiektów) albo on_heap (dla dużych obiektów tworzonych dynamicznie na stercie, pamiętaj aby w destruktorze tego opakowania zwolnić przydzieloną pamięć). W obu tych strukturach zaimplementuj semantykę wskaźników, czyli operator wyłuskania (gwiazdka *) udostępniający referencję do obiektu i operator dostępu do składowych (strzałka ->) udostępniający adres obiektu.
+W kolejnym kroku zdefiniuj szablon klasy będącej opakowaniem dla tablicy obiektów określonego w parametrze typu template<typename T> struct arr_holder. Zaadoptuj poprzednie definicje na przypadek dotyczący tablic - struktura array_on_heap dla małych tablic tworzonych na stercie i albo array_in_file dla dużych tablic przechowywanych w plikach o dostępie swobodnym (pojęcie "mały" i "duży" w odniesieniu do tablic należy rozsądnie doprecyzować). W obu tych strukturach zaimplementuj semantykę indeksowania.
